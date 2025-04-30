@@ -2,11 +2,15 @@ import { View,Text, TextInput } from "react-native";
 import { styles } from "./textBox.style";
 
 
-function TextBox(){
+function TextBox(props){
     return (
        <View >
-           <Text>E-mail</Text>
-           <TextInput style={styles.input}></TextInput>
+           <Text style={styles.label}>{props.label}</Text>
+           <TextInput 
+                style={styles.input}
+                placeholder={props.placeholder}
+                secureTextEntry={props.isPassword}
+           ></TextInput>
        </View>
     )
 }

@@ -1,7 +1,7 @@
-import { COLORS, FONT_SIZE } from "../../constants/theme"
-import { StyleSheet } from "react-native"
+import { COLORS, FONT_SIZE } from "../../constants/theme";
+import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create( {
+export const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 40,
@@ -10,12 +10,12 @@ export const styles = StyleSheet.create( {
     },
     input: {
         width: "100%",
-        marginBottom: 25,
+        marginBottom: 15,
         
     },
     form: {
         width: "100%",
-        marginTop: 50,
+        marginTop: 40,
         marginBottom: 90,
     },
     footer: {
