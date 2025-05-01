@@ -8,13 +8,24 @@ export const styles = StyleSheet.create({
         paddingRight: 40,
         paddingTop: 40,
         alignItems:'center',
-       
-        backgroundColor: COLORS.white
+        
+       backgroundColor: COLORS.white
     },
     input: {
         width: "100%",
         marginBottom: 15,
         
+    },
+    twoInputs:{
+        flexDirection: 'row',
+        marginBottom: 15,
+    },
+    input70:{
+        width: "70%",
+        marginRight: 10
+    },
+    input30:{
+        width: "25%"
     },
     form: {
         width: "100%",
@@ -23,10 +34,10 @@ export const styles = StyleSheet.create({
     },
     footer: {
         width: "100%",
-        position: "absolute",
+        padding:20,
+        height: 70,
         bottom: 0,
-        marginBottom: 140,
-        backgroundColor: COLORS.white
+        backgroundColor: COLORS.white,
     },
     footerText: {
         textAlign: "center",

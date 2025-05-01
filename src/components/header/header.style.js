@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     header: {
         width:"100%",
         alignItems:"center",
+      
     },
     logo: {
         width: 170,
