@@ -4,12 +4,15 @@ import { Image, View } from "react-native";
 import { styles } from "./home.style";
 import icons from "../../constants/icons";
 
+
 import { SafeAreaView } from "react-native-safe-area-context";
 
 // importando os components 
 import TextBox from "../../components/textBox/textBox";
-
-
+import Categorias from "../../components/categorias/categorias";
+import Banners from "../../components/banners/banners";
+//importando os dados API
+import {categorias, banners} from "../../constants/dados"
 export default function Home(){
 
     const [busca, setBusca] = useState("")
@@ -25,8 +28,9 @@ export default function Home(){
                 <TextBox placeholder="O que vamos pedir hoje?" onChangeText={(texto)=>setBusca(texto)} value={busca}/>
             </View>
 
-
-
+            <Categorias dados={categorias}/>
+            
+            <Banners dados={banners}/>
 
 
 
