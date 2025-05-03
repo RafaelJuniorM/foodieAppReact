@@ -43,6 +43,7 @@ export default function Home() {
                 logotipo={restaurantes.logotipo}
                 nome={restaurantes.nome}
                 endereco={restaurantes.endereco}
+                icone={icons.favoritoFull}
               />
             </View>
           );

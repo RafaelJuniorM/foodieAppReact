@@ -76,24 +76,131 @@ export const restaurantes =[
 
     },
     {
-        id:1,
+        id:3,
         nome: "Churrascaria e Pizzaria Boizão",
         endereco: "Alamensa Santos, 954",
         logotipo: require("../assets/restaurante1.png")
 
     },
     {
-        id:3,
+        id:4,
         nome: "The Keba's Bar",
         endereco: "Rua barbacena , 1005",
         logotipo: require("../assets/restaurante2.png")
 
     },
     {
-        id:4,
+        id:5,
         nome: "The Keba's Bar",
         endereco: "Rua barbacena , 1005",
         logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:6,
+        nome: "The Keba's Bar",
+        endereco: "Rua barbacena , 1005",
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:7,
+        nome: "The Keba's Bar",
+        endereco: "Rua barbacena , 1005",
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:8,
+        nome: "The Keba's Bar",
+        endereco: "Rua barbacena , 1005",
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+
+
+
+]
+
+export const pedidos =[ 
+    {
+        id:1,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Entregue",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:2,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Entregue",
+        dt_pedido: "10/05/2024",
+        vl_total: 90.90,
+        logotipo: require("../assets/restaurante2.png")
+
+    },
+    {
+        id:3,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Cancelado",
+        dt_pedido: "13/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:4,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Entregue",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante2.png")
+
+    },
+    {
+        id:5,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Cancelado",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:6,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Entregue",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante2.png")
+
+    },
+    {
+        id:7,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Entregue",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante1.png")
+
+    },
+    {
+        id:8,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        status: "Cancelado",
+        dt_pedido: "10/05/2024",
+        vl_total: 79.90,
+        logotipo: require("../assets/restaurante2.png")
 
     },
 ]
