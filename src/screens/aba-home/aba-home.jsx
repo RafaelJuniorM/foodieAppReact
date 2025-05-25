@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image, ScrollView, Text, View } from "react-native";
 
-import { styles } from "./home.style";
+import { styles } from "./aba-home.style";
 import icons from "../../constants/icons";
 
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -13,7 +13,14 @@ import Banners from "../../components/banners/banners";
 import Restaurante from "../../components/restaurante/restaurante";
 //importando os dados API
 import { categorias, banners, restaurantes } from "../../constants/dados";
-export default function Home() {
+
+
+export default function AbaHome(props) {
+
+  function OpenCardapio(){
+    props.navigation.navigate("cardapio");
+  }
+
   const [busca, setBusca] = useState("");
 
   return (
@@ -44,6 +51,7 @@ export default function Home() {
                 nome={restaurantes.nome}
                 endereco={restaurantes.endereco}
                 icone={icons.favoritoFull}
+                onPress={OpenCardapio}
               />
             </View>
           );

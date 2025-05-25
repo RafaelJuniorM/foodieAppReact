@@ -5,7 +5,7 @@ import { styles } from "./restaurante.style";
 
 export default function Restaurante(props) {
   return (
-    <View style={styles.cardRestaurante}>
+    <TouchableOpacity style={styles.cardRestaurante} onPress={()=>props.onPress()}>
       <Image source={props.logotipo} style={styles.imgRestaurante} />
       <View style={styles.infoRestaurante}>
         <Text style={styles.textNameRest}> {props.nome}</Text>
@@ -14,6 +14,6 @@ export default function Restaurante(props) {
       <TouchableOpacity>
         <Image source={props.icone} style={styles.imgFavorite} />
       </TouchableOpacity>
-    </View>
+    </TouchableOpacity>
   );
 }

@@ -13,6 +13,7 @@ import abaHome from "../assets/aba-home.png";
 import abaFavorito from "../assets/aba-favorito.png";
 import abaPedido from "../assets/aba-pedidos.png";
 import abaPerfil from "../assets/aba-perfil.png";
+import location from "../assets/location.png"
 export default {
     back,
     remove,
@@ -28,4 +29,5 @@ export default {
     abaHome,
     abaPedido,
     abaPerfil,
+    location
 }

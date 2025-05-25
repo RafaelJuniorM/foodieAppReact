@@ -6,7 +6,6 @@ import { COLORS } from "../constants/theme";
 import Login from "../screens/Login/login";
 import Cadastro from "../screens/cadastro/cadastro";
 import segundoCadastro from "../screens/segundoCadastro/segundoCadastro";
-import Busca from "../screens/busca/busca";
 
 
 const Stack = createNativeStackNavigator();
@@ -15,17 +14,7 @@ export default function Routes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-
-      <Stack.Screen
-          name="busca"
-          component={Busca}
-          options={{
-            headerShadowVisible: false,
-            headerTitleAlign: "center",
-            title: "Resultado da busca",
-            headerBackTitle: "Voltar",
-          }}
-        />
+     
         <Stack.Screen
           name="login"
           component={Login}
@@ -59,7 +48,6 @@ export default function Routes() {
             headerTintColor: COLORS.dark_gray,
           }}
         />
-        
       </Stack.Navigator>
     </NavigationContainer>
   );

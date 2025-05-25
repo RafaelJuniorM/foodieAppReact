@@ -3,7 +3,7 @@ import { View } from "react-native";
 import RotasAutenticadas from "./src/routes/routesAutenticadas";
 import Busca from "./src/screens/busca/busca";
 
-const userAutenticado = false;
+const userAutenticado = true;
 
 export default function App() {
   return (

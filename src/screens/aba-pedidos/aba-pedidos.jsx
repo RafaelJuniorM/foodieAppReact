@@ -2,11 +2,11 @@ import { FlatList, Image, Text, View } from "react-native";
 import { pedidos } from "../../constants/dados";
 
 import icons from "../../constants/icons";
-import { styles } from "./pedidos.style";
+import { styles } from "./aba-pedidos.style";
 
 import Pedido from "../../components/pedido/pedido";
 
-export default function Pedidos() {
+export default function AbaPedidos() {
   return (
     <View style={styles.container}>
       <FlatList
