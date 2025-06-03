@@ -13,7 +13,10 @@ import abaHome from "../assets/aba-home.png";
 import abaFavorito from "../assets/aba-favorito.png";
 import abaPedido from "../assets/aba-pedidos.png";
 import abaPerfil from "../assets/aba-perfil.png";
-import location from "../assets/location.png"
+import location from "../assets/location.png";
+import produto from "../assets/produto-pizza.png";
+import menos from "../assets/menos.png";
+import mais from "../assets/mais.png";
 export default {
     back,
     remove,
@@ -29,5 +32,8 @@ export default {
     abaHome,
     abaPedido,
     abaPerfil,
-    location
+    location,
+    produto,
+    menos,
+    mais,
 }
