@@ -256,3 +256,35 @@ export const restaurante = {
         }
     ]
 };
+
+export const pedido ={
+    id: 1,
+    nomeRestaurante: "The Keba’s Bar",
+    endereco: "Rua Rui Barbosa, 512 - Paraiso - São Paulo - SP",
+    status: "Entregue",
+    dt_pedido: "10/05/2024",
+    vl_total: 79.90,
+    logotipo: require("../assets/restaurante2.png"),
+    itens: [
+        {
+            idProduto: 1,
+            nome: "Pizza Calabresa",
+            descricao: "Massa artesanal, mussarela e calabresa",
+            valor: 30.00,
+            foto: require("../assets/produto-pizza.png"),
+            qtd:2,
+            vlUnitario: 30.00,
+            vtTotal: 60.00
+        },
+        {
+            idProduto: 2,
+            nome: "Coca-Cola Lata",
+            descricao: "Coca-Cola lata de 300ml trincando de gelada",
+            valor: 5.00,
+            foto: require("../assets/produto-coca.png"),
+            qtd:2,
+            vlUnitario: 30.00,
+            vtTotal: 60.00
+        }
+    ]
+}

@@ -7,6 +7,11 @@ container:{
     backgroundColor: COLORS.white,
     
 },
+header:{
+    width: "100%",
+    height: 40,
+  
+},
 containerFoto:{
     alignItems: "center",
 
@@ -33,11 +38,7 @@ back:{
     borderRadius: 50,
     padding: 5
 },
-header:{
-    width: "100%",
-    flexDirection: 'row',
-    padding: 10
-},
+
 headerTexto:{
     flex: 1
 },
