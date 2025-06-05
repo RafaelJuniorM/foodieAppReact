@@ -1,10 +1,15 @@
 import { FlatList, Image, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./detalhe-pedido.style";
+import { styles } from "./checkout.style";
 import icons from "../../constants/icons";
 import { pedido } from "../../constants/dados";
 import Produto from "../../components/produto/produto";
+import Button from "../../components/button/button";
 
-export default function DetalhePedido() {
+export default function CheckOut() {
+    function ClickRemove() {
+        console.warn("Remover produto");    
+    }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -19,7 +24,8 @@ export default function DetalhePedido() {
               nome={item.nome}
               descricao={item.descricao}
               valor={item.valor}
-             
+                onClickRemove={ClickRemove}
+                   
             />
           );
         }}
@@ -44,6 +50,11 @@ export default function DetalhePedido() {
           <Text style={styles.valor}>R$ {pedido.vl_total}</Text>
         </View>
       </View>
+
+        <View style={styles.btn}>
+            <Button title="Finalizar Pedido"/>
+        </View>
+      
     </View>
   );
 }

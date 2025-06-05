@@ -59,6 +59,11 @@ total: {
     color: COLORS.dark_gray,
     marginBottom: 2 , 
     marginTop: 2
+},
+
+btn:{
+    marginTop: 20,
+    marginBottom: 20,
 }
 
 });

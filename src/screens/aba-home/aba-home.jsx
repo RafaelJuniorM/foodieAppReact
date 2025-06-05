@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
 
 import { styles } from "./aba-home.style";
 import icons from "../../constants/icons";
@@ -27,7 +27,12 @@ export default function AbaHome(props) {
     <SafeAreaView style={styles.container}>
       <View style={styles.headerHome}>
         <Image source={icons.logo} style={styles.logo}></Image>
-        <Image source={icons.cart} style={styles.cart}></Image>
+        <TouchableOpacity
+          style={styles.favorito}
+          onPress={() => props.navigation.navigate("checkout")}>
+            <Image source={icons.cart} style={styles.cart}></Image>
+          </TouchableOpacity>
+        
       </View>
 
       <View style={styles.busca}>

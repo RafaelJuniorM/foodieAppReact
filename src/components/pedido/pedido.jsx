@@ -4,7 +4,7 @@ import { styles } from "./pedido.style";
 
 export default function Pedido(props) {
   return (
-    <View style={styles.cardPedido}>
+    <TouchableOpacity style={styles.cardPedido} onPress={() => props.onClickPedido()}>
       <Image source={props.logotipo} style={styles.logotipo} />
       <View style={styles.infoPedido}>
         <Text>{props.nome}</Text>
@@ -19,6 +19,6 @@ export default function Pedido(props) {
         </View>
         <Text style={styles.status}>{props.status}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }

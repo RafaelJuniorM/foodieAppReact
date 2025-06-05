@@ -6,7 +6,11 @@ import { styles } from "./aba-pedidos.style";
 
 import Pedido from "../../components/pedido/pedido";
 
-export default function AbaPedidos() {
+export default function AbaPedidos(props) {
+  function DetalhePedido() {
+    props.navigation.navigate("detalhePedido");
+  }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -22,6 +26,7 @@ export default function AbaPedidos() {
               vl_total={item.vl_total}
               dt_pedido={item.dt_pedido}
               status={item.status}
+              onClickPedido={DetalhePedido}
             />
           );
         }}

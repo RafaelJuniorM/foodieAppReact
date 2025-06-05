@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORS, FONT_SIZE } from "../../constants/theme";
+import { usePreventRemoveContext } from "@react-navigation/native";
 
 export const styles = StyleSheet.create({
 produto:{
@@ -33,5 +34,17 @@ nome:{
 descricao:{
    fontSize: FONT_SIZE.sm,
    color: COLORS.medium_gray, 
+},
+
+containerRemove:{
+    alignItems:'flex-end',
+    marginTop: 8
+
+},
+
+
+remove:{
+    width: 30,
+    height: 30,
 },
 });
