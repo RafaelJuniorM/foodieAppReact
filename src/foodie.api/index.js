@@ -9,12 +9,6 @@ app.use(cors()); // habilita o CORS
 app.use(router); // usa as rotas definidas no arquivo routes.js
 
 
-
-
-
-
-
-
 app.listen(3001, () => {
     console.log("Servidor rodando na porta 3001");
 })
